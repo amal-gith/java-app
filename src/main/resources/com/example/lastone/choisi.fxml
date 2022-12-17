@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lastone.Choisi">
+   <children>
+      <Button fx:id="id1" layoutX="218.0" layoutY="113.0" mnemonicParsing="false" onAction="#Clickme" prefHeight="54.0" prefWidth="191.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Inscription etudiants" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="id2" layoutX="218.0" layoutY="181.0" mnemonicParsing="false" onAction="#Clickme" prefHeight="54.0" prefWidth="185.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Gestion des livres" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="id3" layoutX="218.0" layoutY="246.0" mnemonicParsing="false" onAction="#Clickme" prefHeight="54.0" prefWidth="185.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Emprunter des livres" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="229.0" layoutY="26.0" text="Bienvenue !" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

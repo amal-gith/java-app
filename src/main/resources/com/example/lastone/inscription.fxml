@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="579.0" prefWidth="758.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lastone.Inscription">
+   <children>
+      <Label layoutX="237.0" layoutY="25.0" text="Inscription d'etudiants" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="248.0" layoutY="54.0" prefHeight="4.0" prefWidth="200.0" style="-fx-background-color: #76ff03;" />
+      <Button fx:id="btnAjouter" layoutX="514.0" layoutY="83.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="41.0" prefWidth="128.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnModifier" layoutX="514.0" layoutY="140.0" mnemonicParsing="false" onAction="#updateEvent" prefHeight="41.0" prefWidth="128.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Modifier">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSupprimer" layoutX="514.0" layoutY="200.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="41.0" prefWidth="128.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Supprimer">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRechercher" layoutX="514.0" layoutY="255.0" mnemonicParsing="false" onAction="#Clickme" prefHeight="41.0" prefWidth="128.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Rechercher">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="50.0" layoutY="103.0" text="CIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="139.0" text="Nom" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="217.0" text="Classe" textFill="#e4dede">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="173.0" text="Prenom" textFill="#f5efef">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCIN" layoutX="99.0" layoutY="101.0" prefHeight="25.0" prefWidth="234.0" promptText="CIN" />
+      <TextField fx:id="txtNom" layoutX="99.0" layoutY="137.0" prefHeight="25.0" prefWidth="234.0" promptText="Nom" />
+      <TextField fx:id="txtPrenom" layoutX="100.0" layoutY="171.0" prefHeight="25.0" prefWidth="234.0" promptText="Prenom" />
+      <TextField fx:id="txtClasse" layoutX="100.0" layoutY="205.0" prefHeight="31.0" prefWidth="234.0" promptText="Classe" />
+      <TableView fx:id="tab" layoutX="8.0" layoutY="312.0" onMouseClicked="#tablehandleButtonAction" prefHeight="200.0" prefWidth="744.0">
+        <columns>
+          <TableColumn fx:id="CINColumn" prefWidth="132.0" text="CIN" />
+          <TableColumn fx:id="NomColumn" prefWidth="158.0" text="Nom" />
+            <TableColumn fx:id="PrenomColumn" prefWidth="201.0" text="Prenom" />
+            <TableColumn fx:id="ClasseColumn" prefWidth="252.0" text="Classe" />
+        </columns>
+      </TableView>
+      <Button layoutX="24.0" layoutY="540.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #76ff03;" text="Retour">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
